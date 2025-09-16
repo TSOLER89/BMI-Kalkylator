@@ -18,6 +18,7 @@ namespace BMI_Kalkylator
             {
                 Console.WriteLine("Okänd enhet, returnerar 0");
                 return 0;
+
             }
         }
 
