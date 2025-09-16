@@ -41,15 +41,15 @@ namespace BMI_Kalkylator
             }
 
             // 1. Vanligt anrop
-            double bmi1 = CalculateBMI(70, 1.75);
+            double bmi1 = CalculateBMI(weight), (height);
             Console.WriteLine($"BMI (metric, default): {bmi1:F2}");
 
             // 2. Namngivna argument i annan ordning
-            double bmi2 = CalculateBMI(height: 1.80, weight: 85);
+            double bmi2 = CalculateBMI(height, weight);
             Console.WriteLine($"BMI (metric, named args): {bmi2:F2}");
 
             // 3. Hårdkodat exempel med imperial (lbs/inches)
-            double bmi3 = CalculateBMI(unit: "imperial", weight: 180, height: 70);
+            double bmi3 = CalculateBMI(weight, height);
             Console.WriteLine($"BMI (imperial): {bmi3:F2}");
 
             Console.WriteLine("\nTryck Enter för att avsluta...");
